@@ -11,22 +11,30 @@ html {
 }
 
 body {
-  color: yellow;
-  font-family: impact, sans-serif;
+  color: white;
+  font-family: Tahoma, sans-serif;
   display: flex;
   justify-content: center;
   height: 100vh;
   align-items: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow:   
+  0px 5px 5px #FF00FF,
+  0px 8px 5px #00FFFF,
+  0px 12px 5px #FFFF00;
 }
 
-main {
-  background-color: #000;
-  padding: 40px;
-}
+  main {
+    background-color: rgba(0, 0, 0, 0.9); /* Black color with 50% opacity */
+    padding: 40px;
+    border:8px solid rgba(128, 128, 128, 0.1);
+    box-shadow: 0px 9px 80px  rgba(255, 255, 255, 0.5);
+  }
 
 h1 {
   text-align: center;
-  font-size: 40px;
+  font-size: 60px;
 }
 
 .game-controls {
@@ -37,14 +45,16 @@ h1 {
   display: inline-block;
   height: 38px;
   padding: 0 30px;
-  color: yellow;
+  color: #FF00FF;
   text-align: center;
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
   background-color: transparent;
-  border: 1px solid yellow;
+  border: 1px solid skyblue;
   cursor: pointer;
+  outline: none; /* Remove the default outline */
+  box-shadow: 4px 4px 3px #FFFF00; /* Shadow around the button */
 }
 
 .start-button:hover {
@@ -67,71 +77,88 @@ h1 {
 }
 
 .pad-red {
-  border-top-left-radius: 200px;
-  background-color: red;
+  border: 10px solid #FF0000; /* Red border */
+  background-color: darkred;
+  cursor: grab;
+  border-top-left-radius: 200px; /* Quarter-circle shape */
 }
 
 .pad-red:hover,
 .pad-red:focus {
   background-color: #ff451a;
   transform: rotate(-5deg);
+  box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.7); /* Red outer glow */
 }
+
 
 .pad-red:active,
 .pad-red.activated {
   background-color: #ff5c36;
   transform: translateY(10px);
+  cursor:grabbing;
 }
 
 .pad-green {
-  border-top-right-radius: 200px;
+  border: 10px solid #00FF00; /* Green border */
   background-color: green;
+  cursor: grab;
+  border-top-right-radius: 200px; /* Quarter-circle shape */
 }
 
 .pad-green:hover,
 .pad-green:focus {
   background-color: #8cc218;
   transform: rotate(5deg);
+  box-shadow: 0 0 10px 5px rgba(0, 255, 0, 0.7); /* Green outer glow */
 }
 
 .pad-green:active,
 .pad-green.activated {
   background-color: #a0ea00;
   transform: translateY(10px);
+  cursor:grabbing;
 }
 
 .pad-yellow {
-  border-bottom-right-radius: 200px;
-  background-color: yellow;
+  border: 10px solid #FFFF00; /* Yellow border */
+  background-color: darkgoldenrod;
+  cursor: grab;
+  border-bottom-right-radius: 200px; /* Quarter-circle shape */
 }
 
 .pad-yellow:hover,
 .pad-yellow:focus {
   background-color: #ffb900;
   transform: rotate(5deg);
+  box-shadow: 0 0 10px 5px rgba(255, 255, 0, 0.7); /* Yellow outer glow */
 }
 
 .pad-yellow:active,
 .pad-yellow.activated {
   background-color: #ffca3d;
   transform: translateY(10px);
+  cursor:grabbing;
 }
 
 .pad-blue {
-  border-bottom-left-radius: 200px;
-  background-color: blue;
+  border: 10px solid #0000FF; /* Blue border */
+  background-color: darkblue;
+  cursor: grab;
+  border-bottom-left-radius: 200px; /* Quarter-circle shape */
 }
 
 .pad-blue:hover,
 .pad-blue:focus {
   background-color: #139ddd;
   transform: rotate(-5deg);
+  box-shadow: 0 0 10px 5px rgba(0, 0, 255, 0.7); /* Blue outer glow */
 }
 
 .pad-blue:active,
 .pad-blue.activated {
   background-color: #2bbcff;
   transform: translateY(10px);
+  cursor:grabbing;
 }
 
 .hidden {

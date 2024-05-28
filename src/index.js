@@ -175,6 +175,7 @@ document.addEventListener('DOMContentLoaded', () => {
         setLevel(selectedSkillLevel);
     });
 });
+
 /**
   * Please do not modify the code below.
   * Used for testing purposes.
