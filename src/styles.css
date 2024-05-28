@@ -12,7 +12,7 @@ html {
 
 body {
   color: yellow;
-  font-family: 'Rubik Microbe', sans-serif;
+  font-family: impact, sans-serif;
   display: flex;
   justify-content: center;
   height: 100vh;
@@ -74,7 +74,7 @@ h1 {
 .pad-red:hover,
 .pad-red:focus {
   background-color: #ff451a;
-  transform:rotate(-5deg);
+  transform: rotate(-5deg);
 }
 
 .pad-red:active,
@@ -86,13 +86,12 @@ h1 {
 .pad-green {
   border-top-right-radius: 200px;
   background-color: green;
-  transform:rotate(90deg);
 }
 
 .pad-green:hover,
 .pad-green:focus {
   background-color: #8cc218;
-  transform: rotate(90deg);
+  transform: rotate(5deg);
 }
 
 .pad-green:active,
@@ -121,19 +120,18 @@ h1 {
 .pad-blue {
   border-bottom-left-radius: 200px;
   background-color: blue;
-  transform:rotate(180deg);
 }
 
 .pad-blue:hover,
 .pad-blue:focus {
   background-color: #139ddd;
-  transform: rotate(-175deg);
+  transform: rotate(-5deg);
 }
 
 .pad-blue:active,
 .pad-blue.activated {
   background-color: #2bbcff;
-  transform: translate(10px);
+  transform: translateY(10px);
 }
 
 .hidden {
